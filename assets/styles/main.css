@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#app{
+    width: 100vw;
+    height: 80vh;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1,
+h2,
+li,
+p,
+i,
+span,
+.under-construction{
+    font-family: 'Poiret One', cursive;
+}
+
+h1,
+h2{
+    font-size: 6em;
+    font-weight: 400;
+    color: white;
+}
+
+li,
+p,
+i,
+.under-construction{
+    font-size: 2em;
+    color: white;
+}
+
+body{
+    background-color: #50BDE4;
+}
+
+header,
+main,
+footer {
+    text-align: center;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+li{
+    padding:25px;
+}
+
+.logo-img{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin: auto;
+    padding: 0px;
+}
+
+#quote-container{
+    position: absolute;
+    max-width: 80%;
+    right: 0;
+    transform: translateY(165%);
+}
+
+.intro,
+.quote,
+.author {
+    text-align: right;
+    display: block;
+    font-size: 1.8em;
+    color: #CCCCCC;
+    animation: fadeIn 3s;
+}
+
+.intro {
+    font-weight: 700;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
